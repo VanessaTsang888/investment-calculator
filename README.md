@@ -1,6 +1,6 @@
 # Investment Calculator Application
 
-I developed this simple and basic investment calculator application to showcase my technical skills in using **_TypeScript's most important essential features_** such as baic built-in types, object & array types, function types and custom types.
+I developed this simple and basic investment calculator application to showcase my technical skills in using **_TypeScript's most important essential features_** such as basic built-in types, object & array types, function types and custom types.
 
 I see this project as a TypeScript demo project where I can demonstrate how I can work with basic types and compile my TypeScript code file in to vanilla JavaScript code file in order to run my application locally and test in the terminal and decide if my application works as expect - without any runtime errors (bugs).
 
@@ -18,7 +18,7 @@ This investment calculator is designed and developed for the user to input their
 - `git clone` the repository
 - Navigate to the directory
 - Open file 'calculator.ts', navigate to lines 108 to 111 and for each property add in your input data (over mine) with a comma at the end. Save the file.
-- In your command line (Windows) or terminal (MacOS) run this command script `tsc calculator.ts` as this will compile the TypeScript file to a JavaScript file.
+- In your command line (Windows) or terminal (MacOS) run this command script `tsc calculator.ts` as this will compile the TypeScript file in to a JavaScript file.
 - Now run this command `node calculator.js` to run the file (at runtime) and output the results/data.
 
 ## Dependencies
@@ -28,18 +28,30 @@ This investment calculator is designed and developed for the user to input their
 | [Node.js runtime](https://nodejs.org/)                 | To run TypeScript files using the `node` command. |
 | [TypeScript](https://www.typescriptlang.org/download/) | To compile TypeScript files to JavaScript files   |
 
-## Tests
+## How To Test The Application
 
-Once you have ran the 'calculator.js' sucessfully, you can analyse the retuned results and check they tally up with your inputs you have entered between lines 108 and 111. If so, you can be confident that the syntax and logic in the 'calculator.ts' file is correct and error free.
+To test the application follow the below instructions:
 
-**_Test The Error Cases_**
+Between lines 108 and 111 I have hard coded my inputs as values. However, for your test(s) you can change these values to values tailored to your investments.
 
-To test the error cases within the `if` statements, you will need to enter an invalid number for any of the properties on lines 108 to 111.
-If the error message you expect to be return actually gets logged out in to your command line or terminal, then you can be sure the syntax and logic within the `if` blocks is correct and bug free.
+`tsc` # Compile the 'calculator.ts' file in to a JavaScript file. Now you will see a new file named 'calculator.js' within the root directory.
 
-### My Code Comments
+`node calculator.js` # Run the 'calculator.js' file to generate the results. Example, if you have specified the duration of your investment to calculation for ten years, then the output results be ten years of data in your command line or terminal.
 
-I have written code comments to demonstrate that I understand each block of code and they also acts as a reference for myself in case I need to refer to them in the future to remind myself of a particular logic behind JavaScript or TypeScript syntax.
+Analyse the results (data) and decide if they tally up with your input data. If you are happy with the results of your analyse then you can be confident that the syntax and logic within the program is correct. Your results should look something like my screen shot below:
+
+![Results (the output data from running the application)](./images/results-data-from-output-from-user-inputs.png)
+
+### Test The Error Cases
+
+I have written error messages to help my users to utilse my application correctly and effiently. This help to ensure the user experience of my application is maintained at a high level.
+
+To test the error cases within the `if` statements, you will need to enter an invalid number (or character) for any of the properties on lines 108 to 111, where I have declared the `investmentData` variable. If the error message you expect to be return actually gets logged out in to your command line or terminal, then you can be sure the syntax and logic within the `if` blocks are correct and bug free.
+
+## My Code Comments
+
+File: calculator.ts
+I have written code comments within the 'calculator.ts' code file to demonstrate that I understand each block of code I had written. My code comments also act as a reference for myself in case I need to refer to them in the future to remind myself of a particular logic behind the JavaScript/TypeScript syntax.
 
 ## Resources
 
